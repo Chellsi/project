@@ -82,6 +82,7 @@ ul.dropdown li {
     background-color: #00BCD4;
     transition: 1s;
     font-size: 15pt;
+    border: solid #4DD0E1;
 }
 
 .container-menu li:hover .dropdown {
@@ -140,6 +141,7 @@ ul.dropdown li {
     height: 0;
     background-color: #80DEEA;
     transition: 1s;
+    border: solid #00BCD4;
 }
 
 .user-profile a {
@@ -153,4 +155,9 @@ ul.dropdown li {
 .user-profile li {
     position: relative;
     min-width: 130px;
+}
+
+
+.main-content {
+    background-color: #006064;
 }
