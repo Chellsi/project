@@ -21,6 +21,7 @@ html, body {
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
+    cursor: pointer;
 }
 
 .site-icon img {
@@ -32,6 +33,11 @@ html, body {
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
+}
+
+.container-menu span {
+    font-size: 20pt;
+    color: #E0F7FA;
 }
 
 .container-menu a {
@@ -50,9 +56,8 @@ html, body {
 }
 
 .container-menu li {
-    border: 1px solid #E0F7FA;
     position: relative;
-    min-width: 130px;
+    min-width: 200px;
 }
 
 .container-menu li:hover a {
@@ -65,7 +70,6 @@ ul.dropdown {
     top: 100%;
     left: 0;
     min-width: 100%;
-    max-width: 130px;
     flex-direction: column;
     visibility: hidden;
     opacity: 0;
@@ -75,8 +79,9 @@ ul.dropdown {
 ul.dropdown li {
     padding: 0px;
     height: 0;
-    background-color: #80DEEA;
+    background-color: #00BCD4;
     transition: 1s;
+    font-size: 15pt;
 }
 
 .container-menu li:hover .dropdown {
@@ -104,7 +109,6 @@ ul.dropdown li {
     transition: .3s;
 }
 
-
 .user-profile:hover .dropdown-profile {
     visibility: visible;
     opacity: 1;
@@ -122,8 +126,8 @@ ul.dropdown li {
 .dropdown-profile {
     display: flex;
     position: absolute;
-    top: 100%;
-    left: 0;
+    top: 54px;
+    right: 72px;
     min-width: 100%;
     flex-direction: column;
     visibility: hidden;
@@ -141,13 +145,12 @@ ul.dropdown li {
 .user-profile a {
     color: initial;
     text-decoration: none;
-    padding: 10px;
+    padding: 0px;
     display: block;
     transition: .1s;
 }
 
 .user-profile li {
-    border: 1px solid #E0F7FA;
     position: relative;
     min-width: 130px;
 }
