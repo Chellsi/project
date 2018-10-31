@@ -104,13 +104,19 @@ ul.dropdown li {
     transition: .3s;
 }
 
-.user-profile img:hover {
-    padding: 10px 20px;
-}
 
 .user-profile:hover .dropdown-profile {
     visibility: visible;
     opacity: 1;
+}
+
+.user-profile:hover .dropdown-profile li {
+    padding: 10px;
+    height: 100%;
+}
+
+.user-profile:hover img {
+    padding: 10px 20px;
 }
 
 .dropdown-profile {
@@ -128,6 +134,20 @@ ul.dropdown li {
 .dropdown-profile li {
     padding: 0px;
     height: 0;
-    background-color: #6200ee;
+    background-color: #80DEEA;
     transition: 1s;
+}
+
+.user-profile a {
+    color: initial;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: .1s;
+}
+
+.user-profile li {
+    border: 1px solid #E0F7FA;
+    position: relative;
+    min-width: 130px;
 }
